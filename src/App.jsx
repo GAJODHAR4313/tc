@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Home from './Components/home';
-import AboutUs from './Components/aboutus'; // 1. Import file-nya
+import AboutUs from './Components/AboutUs'; // 1. Import file-nya
 import ProductFeatures from './Components/ProductFeatures'; // 1. Import file-nya
 import RotatingBelt from './Components/RotatingBelt'; // 1. Import file-nya
 import TestimonialSection from './Components/TestimonialSection'; // 1. Import file-nya
