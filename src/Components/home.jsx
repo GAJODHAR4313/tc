@@ -3,14 +3,13 @@ import { Play } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen md:h-screen w-full bg-[#02040a] text-white overflow-x-hidden overflow-y-auto md:overflow-hidden font-sans antialiased selection:bg-blue-500/30">
+    <div className="relative w-full h-auto bg-[#02040a] text-white overflow-hidden font-sans antialiased selection:bg-blue-500/30">
       
       {/* Premium Background grid + Ambient lighting rings */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       
       {/* Main Content */}
-      {/* Increased bottom padding further (pb-48 md:pb-64) to prevent text clipping from the lower image position */}
-      <div className="relative z-20 max-w-7xl w-full mx-auto px-10 md:px-8 xl:px-2 pt-28 md:pt-36 pb-48 md:pb-64 text-center md:text-left">
+      <div className="relative z-20 max-w-7xl w-full mx-auto px-10 md:px-8 xl:px-2 pt-28 md:pt-36 pb-32 sm:pb-48 md:pb-[380px] text-center md:text-left">
         
         {/* Top Section: Text Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
@@ -32,7 +31,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Sisi Kanan - Konten tetap rata kiri, tapi bloknya terdorong ke kanan */}
+          {/* Sisi Kanan */}
           <div className="lg:col-span-5 space-y-6 md:space-y-8 lg:pt-3 lg:ml-auto flex flex-col items-center md:items-start">
             
             {/* Flex container untuk Gambar dan Teks */}
@@ -45,7 +44,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center md:items-end md:justify-end lg:mr-4 xl:mr-24 gap-6 md:gap-4 mt-6 md:mt-0 w-full">
               
-              {/* Baris Tombol (Sama rata kiri-kanan) */}
+              {/* Baris Tombol */}
               <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 w-full">
                 <button className="px-5 md:px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-sm md:text-base font-medium transition-all duration-300 whitespace-nowrap">
                   View Demo
@@ -77,17 +76,17 @@ export default function Home() {
 
       {/* Image Container */}
       <div className="absolute bottom-0 left-0 w-full z-10 flex justify-center items-end select-none pointer-events-none">
-        {/* Desktop Image - Pushed down much further using translate-y-36 */}
+        {/* Desktop Image - Shifted up slightly using negative translation */}
         <img 
           src="/billing/123.png" 
           alt="Dashboard Showcase Desktop" 
-          className="hidden md:block w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] translate-y-36"
+          className="hidden md:block w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] -translate-y-4"
         />
-        {/* Mobile Image - Pushed down further using translate-y-28 for mobile layout */}
+        {/* Mobile Image - Shifted up slightly using negative translation */}
         <img 
           src="/billing/mb.png" 
           alt="Dashboard Showcase Mobile" 
-          className="block md:hidden w-full px-4 h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] translate-y-28 sm:translate-y-36 opacity-60 blur-[2px]"
+          className="block md:hidden w-full px-4 h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] -translate-y-8 opacity-60 blur-[2px]"
         />
       </div>
 
