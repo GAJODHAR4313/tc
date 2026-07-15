@@ -9,7 +9,8 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       
       {/* Main Content */}
-      <div className="relative z-20 max-w-7xl w-full mx-auto px-10 md:px-8 xl:px-2 pt-28 md:pt-36 pb-32 sm:pb-48 md:pb-[380px] text-center md:text-left">
+      {/* Section height slightly reduced using lower bottom padding (pb-24 sm:pb-36 md:pb-[290px]) */}
+      <div className="relative z-20 max-w-7xl w-full mx-auto px-10 md:px-8 xl:px-2 pt-28 md:pt-36 pb-24 sm:pb-36 md:pb-[290px] text-center md:text-left">
         
         {/* Top Section: Text Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
@@ -75,18 +76,21 @@ export default function Home() {
       </div>
 
       {/* Image Container */}
-      <div className="absolute bottom-0 left-0 w-full z-10 flex justify-center items-end select-none pointer-events-none">
-        {/* Desktop Image - Shifted up slightly using negative translation */}
+      {/* Desktop Image (Unchanged) */}
+      <div className="hidden md:flex absolute bottom-0 left-0 w-full z-10 justify-center items-end select-none pointer-events-none">
         <img 
           src="/billing/123.png" 
           alt="Dashboard Showcase Desktop" 
-          className="hidden md:block w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] -translate-y-4"
+          className="w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] -translate-y-4"
         />
-        {/* Mobile Image - Shifted up slightly using negative translation */}
+      </div>
+
+      {/* Mobile Image (Unchanged) */}
+      <div className="md:hidden absolute bottom-28 sm:bottom-36 left-0 w-full z-10 flex justify-center items-end select-none pointer-events-none">
         <img 
           src="/billing/mb.png" 
           alt="Dashboard Showcase Mobile" 
-          className="block md:hidden w-full px-4 h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] -translate-y-8 opacity-60 blur-[2px]"
+          className="w-full px-4 max-h-[300px] sm:max-h-[380px] object-contain object-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] opacity-60 blur-[2px]"
         />
       </div>
 
