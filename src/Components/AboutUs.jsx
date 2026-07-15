@@ -12,7 +12,7 @@ export default function AboutUs() {
         <img src="/billing/lol.png" alt="Icon" className="hidden lg:block absolute -right-8 -top-8 w-16 pointer-events-none" />
 
         <h1 className="text-2xl sm:text-4xl lg:text-5xl font-['Fahkwang'] leading-tight relative z-10">
-          Everything Your Business Needs to Bill, Manage <br className="hidden lg:block" /> & Grow All in One Platform.
+          Simplify billing, inventory, GST, and business management with<br className="hidden lg:block" /> Tech Surya Billing Software.
         </h1>
 
         <p className="text-sm sm:text-base font-normal leading-relaxed text-zinc-300 max-w-3xl mx-auto">
