@@ -12,8 +12,8 @@ export default function AboutUs() {
         <img src="/billing/lol.png" alt="Icon" className="hidden lg:block absolute -right-8 -top-8 w-16 pointer-events-none" />
 
         <h1 className="text-2xl sm:text-4xl lg:text-5xl font-['Fahkwang'] leading-tight relative z-10">
-          Simplify billing, inventory, GST, and business management with<br className="hidden lg:block" /> Tech Surya Billing Software.
-        </h1>
+          Simplify billing, inventory, GST, & business management with<br className="hidden lg:block" /> Billing Software.
+        </h1> 
 
         <p className="text-sm sm:text-base font-normal leading-relaxed text-zinc-300 max-w-3xl mx-auto">
           Tech Surya Billing Software is an intelligent business management solution designed to simplify your daily operations. From creating invoices and managing inventory to GST compliance, everything is in one secure platform.

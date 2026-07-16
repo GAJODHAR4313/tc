@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative w-full h-auto bg-[#02040a] text-white overflow-hidden font-sans antialiased selection:bg-blue-500/30">
       
       {/* Premium Background grid + Ambient lighting rings */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:linear-gradient(to_bottom,white_85%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_85%,transparent_100%)]" />
       
       {/* Main Content */}
       {/* Section height slightly reduced using lower bottom padding (pb-24 sm:pb-36 md:pb-[290px]) */}
@@ -93,6 +93,9 @@ export default function Home() {
           className="w-full px-4 max-h-[300px] sm:max-h-[380px] object-contain object-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] opacity-60 blur-[2px]"
         />
       </div>
+
+      {/* Blending layer to transition smoothly to the second section */}
+      <div className="absolute bottom-0 left-0 w-full h-20 md:h-32 bg-gradient-to-t from-[#02040a] to-transparent z-30 pointer-events-none" />
 
     </div>
   );
